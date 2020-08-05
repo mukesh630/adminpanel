@@ -1,5 +1,6 @@
 {
   "name": "users",
+  "homepage": "https://mukesh630.github.io/adminpanel",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,6 +18,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+     "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "json-server": "json-server --watch db.json --port 3003",
     "start:dev": "concurrently \"npm start\" \"npm run json-server\"",
     "build": "react-scripts build",
